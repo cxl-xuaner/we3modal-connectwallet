@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Inter } from "next/font/google";
 import { headers } from "next/headers"; // added
 import ContextProvider from './context';
 import "./globals.css";
