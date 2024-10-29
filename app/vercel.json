@@ -1,0 +1,17 @@
+{
+    "routes": [
+      {
+        "src": "/newblockinfo",
+        "dest": "/app/newblockinfo"
+      },
+      {
+        "src": "/",
+        "dest": "/page"
+      },
+      {
+        "src": "/",
+        "dest": "/app/index"
+      }
+    ]
+  }
+  
