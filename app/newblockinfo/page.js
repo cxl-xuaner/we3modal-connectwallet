@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { createPublicClient, http, parseAbiItem, formatUnits } from "viem";
 import { mainnet } from 'viem/chains';
-import Head from 'next/head';
 
 const publicClient = createPublicClient({
   chain: mainnet,
@@ -45,7 +44,7 @@ const BlockWatcher = () => {
         });
 
         // 更新日志状态
-        setLogs(prevLogs => [...newLogs]);
+        setLogs(() => [...newLogs]);
       }
     });
 
